@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stock Market</title>
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Stock Market - FCC</h1>
+            <div class="div-add">
+                Add a new company: 
+                <input type="text" placeholder="New company" id="input-text-add"/>
+                <button id="btn-add">Submit</button>
+                <div id="message-display"></div>
+            </div>
+            <div class="graph">
+                <div id="result"></div>
+            </div>
+            <div class="div-delete">
+                <div id="list-comp"></div>
+            </div>
+        </div>
+            
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="highstock.js"></script>
+        <script type="text/javascript" src="ajax_calls.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

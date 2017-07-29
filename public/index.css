@@ -1,0 +1,67 @@
+body {
+    padding: 40px 0;
+}
+.main {
+    width: 60%;
+    max-width: 800px;
+    margin: 30px auto;
+    font-family: 'Merriweather', serif;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.div-add {
+    margin: 25px 0;
+}
+.div-add input[type=text] {
+    padding: 2px;
+    margin: 0 5px;
+    font-size: 1.1em;
+}
+.div-add button {
+    padding: 2px 7px;
+    font-size: 1.1em;
+    background: #FFF;
+    color: #2F3061;
+    border: 2px solid #2F3061;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.div-add button:hover {
+    background: #2F3061;
+    color: #FFF;
+    border: 2px solid #2F3061;
+}
+#message-display {
+    color: #BD1E1E;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+.div-delete {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.one-comp {
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+    background: #2F3061;
+    color: #FFF;
+}
+.one-comp button {
+    color: #FFF;
+    background: none;
+    margin-left: 10px;
+    border: 2px solid #2F3061;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.one-comp button:hover {
+    border: 2px solid #FFF;
+}
