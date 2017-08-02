@@ -20,7 +20,14 @@ app.route("/").get((req, res) => {
 
 function getStock(client) {
     Comps.find({}).select("company -_id").exec((err, allComp) => {
-        if (err) throw err;
+        if (err) {
+            console.log("error");
+            throw err;
+        }
+        else if(allComp.length === 0) {
+            // No data to search for in google-finance
+            return;
+        }
         
         var symbols = [];
         for (var comp in allComp) {
